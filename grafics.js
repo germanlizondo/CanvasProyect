@@ -66,6 +66,7 @@ function grafic1(){
    var a=parseFloat(array[3])+parseFloat(array[7])+parseFloat(array[11])+parseFloat(array[15]);
    var b=parseFloat(array[4])+parseFloat(array[8])+parseFloat(array[12])+parseFloat(array[16]);
    
+   console.log(array[26]);
    var suma=i+j+a+b;
    var i2=i/suma*100;
    var j2=j/suma*100;
@@ -169,22 +170,22 @@ function grafic2(){
       var o=parseFloat(array[12]);
       var p=parseFloat(array[16]);
       var max= Math.max(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p);
-      var apos= 270-(a*100/max)*2;
-      var bpos= 270-(b*100/max)*2;
-      var cpos= 270-(c*100/max)*2;
-      var dpos= 270-(d*100/max)*2;
-      var epos= 270-(e*100/max)*2;
-      var fpos= 270-(f*100/max)*2;
-      var gpos= 270-(g*100/max)*2;
-      var hpos= 270-(h*100/max)*2;
-      var ipos= 270-(i*100/max)*2;
-      var jpos= 270-(j*100/max)*2;
-      var kpos= 270-(k*100/max)*2;
-      var lpos= 270-(l*100/max)*2;
-      var mpos= 270-(m*100/max)*2;
-      var npos= 270-(n*100/max)*2;
-      var opos= 270-(o*100/max)*2;
-      var ppos= 270-(p*100/max)*2;
+      var apos= 350-(a*140/max)*2;
+      var bpos= 350-(b*140/max)*2;
+      var cpos= 350-(c*140/max)*2;
+      var dpos= 350-(d*140/max)*2;
+      var epos= 350-(e*140/max)*2;
+      var fpos= 350-(f*140/max)*2;
+      var gpos= 350-(g*140/max)*2;
+      var hpos= 350-(h*140/max)*2;
+      var ipos= 350-(i*140/max)*2;
+      var jpos= 350-(j*140/max)*2;
+      var kpos= 350-(k*140/max)*2;
+      var lpos= 350-(l*140/max)*2;
+      var mpos= 350-(m*140/max)*2;
+      var npos= 350-(n*140/max)*2;
+      var opos= 350-(o*140/max)*2;
+      var ppos= 350-(p*140/max)*2;
       if (array[26]=="1"){
         img.src = 'first.jpg';}
         if (array[26]=="2"){
@@ -251,7 +252,7 @@ function grafic2(){
          
           grafico.beginPath();
           grafico.moveTo(90,ipos);
-          grafico.lineTo(100,jpos);
+          grafico.lineTo(190,jpos);
           grafico.lineTo(290,kpos);
           grafico.lineTo(395,lpos);
           grafico.strokeStyle=(array[23]);
