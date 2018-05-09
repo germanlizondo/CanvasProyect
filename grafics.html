@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecte Canvas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="grafics.js"></script>
+
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">App Gràfics</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Index<span class="sr-only">(current)</span></a>
+                    </li>
+                
+                  </ul>
+                
+                </div>
+              </nav>
+    <div class="container">
+    <h1 class="display-1 text-center" id="h1">Gràfics</h1>
+    <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Valors/Grafics</th>
+                <th scope="col" id="name1"contenteditable="true">G1</th>
+                <th scope="col" id="name2"contenteditable="true">G2</th>
+                <th scope="col" id="name3"contenteditable="true">G3</th>
+                <th scope="col" id="name4"contenteditable="true">G4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th id="valor1"scope="row"contenteditable="true">Valor</th>
+                <td id="a1"contenteditable="true">1</td>
+                <td id="b1"contenteditable="true">1</td>
+                <td id="c1"contenteditable="true">1</td>
+                <td id="d1"contenteditable="true">1</td>
+              </tr>
+              <tr>
+                    <th id="valor2"scope="row"contenteditable="true">Valor</th>
+                <td id="a2"contenteditable="true">1</td>
+                <td id="b2"contenteditable="true">1</td>
+                <td id="c2"contenteditable="true">1</td>
+                <td id="d2"contenteditable="true">1</td>
+              </tr>
+              <tr>
+                    <th id="valor3"scope="row"contenteditable="true">Valor</th>
+                <td id="a3"contenteditable="true">1</td>
+                <td id="b3"contenteditable="true">1</td>
+                <td id="c3"contenteditable="true">1</td>
+                <td id="d3"contenteditable="true">1</td>
+              </tr>
+              <tr>
+                    <th id="valor4"scope="row"contenteditable="true">Valor</th>
+                    <td id="a4"contenteditable="true">1</td>
+                    <td id="b4"contenteditable="true">1</td>
+                    <td id="c4"contenteditable="true">1</td>
+                    <td id="d4"contenteditable="true">1</td>
+                  </tr>
+            </tbody>
+          </table><br>
+    <table class="table">
+            <thead>
+              <tr>
+               
+                <th scope="col">Color 1</th>
+                <th scope="col">Color 2</th>
+                <th scope="col">Color 3</th>
+                <th scope="col">Color 4</th>
+                <th scope="col">Tipografia</th>
+                <th scope="col">Fondo</th>
+                <th scope="col">Color Linea</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              
+                <td><div class="input-group mb-3">
+                        
+                        <input id="color1"type="color" class="form-control" >
+                      </div></td>
+                      <td><div class="input-group mb-3">
+                        
+                            <input id="color2"type="color" class="form-control" >
+                          </div></td>
+                          <td><div class="input-group mb-3">
+                        
+                                <input id="color3"type="color" class="form-control" >
+                              </div></td>
+                 <td>
+                    <div class="input-group mb-3">
+                     <input id="color4"type="color" class="form-control" >
+                    </div>
+                </td>
+                            <td><select class="custom-select" id="typo">
+                                 
+                                    <option selected value="1">Arial</option>
+                                    <option value="2">Comic-Sans</option>
+                                    <option value="3">Times New Roman</option>
+                                  </select></td>
+                            <td>  <select class="custom-select" id="fondo">
+                                 
+                                    <option selected value="1">Galaxia</option>
+                                    <option value="2">Space</option>
+                                    <option value="3">Mountains</option>
+                                  </select></td>
+                            <td contenteditable="true"><input id="linea"type="number" class="form-control" step=".1"></td>
+              </tr>
+           
+            </tbody>
+          </table>
+          <div>
+                <canvas style="float: left;" width="550" height="400" id="grafic1">
+                  Lo sentimos, tu navegador no soporta canvas
+                </canvas>
+                <canvas style="float: right;"  width="550" height="400" id="grafic2">
+                Lo sentimos, tu navegador no soporta canvas
+                </canvas>
+                </div>
+                <div>
+                  <canvas style="float: left;"  width="550" height="400" id="grafic3">
+                    Lo sentimos, tu navegador no soporta canvas
+                  </canvas>
+                  <canvas  style="float: right;" width="550" height="400"id="grafic4">
+                  Lo sentimos, tu navegador no soporta canvas
+                  </canvas>
+                </div>
+
+
+
+   
+
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
